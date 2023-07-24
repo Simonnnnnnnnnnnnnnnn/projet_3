@@ -1,5 +1,5 @@
 /**
- * [INGInious] url for submitting : https://inginious.info.ucl.ac.be/course/LEPL1503/s4_simple_stack
+ * [INGInious] url for submitting : https://inginious.info.ucl.ac.be/course/LEPL1503/s4_order_relation_linked_list
  *
  *  you just need to provide compare & insert functions inside this module
  *
