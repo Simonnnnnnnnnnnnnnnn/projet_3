@@ -5,6 +5,7 @@
 /* [S2] Bitwise operation: high order bits
  *
  * https://inginious.info.ucl.ac.be/course/LEPL1503/s2_bits_leftmost
+ *
  * Write the body of a function get_3_leftmost_bits that returns the 3 high order bits of x.
  * For instance, if x=0b11011001..., the function should return a uint8_t containing 0b00000110.
  * If x=0b01100001..., the function should return a uint8_t containing 0b00000011.
@@ -16,6 +17,7 @@ uint8_t get_3_leftmost_bits(uint32_t x) {
 /* [S2] Bitwise operation: extract low order bits
  *
  * https://inginious.info.ucl.ac.be/course/LEPL1503/s2_bits_rightmost
+ *
  * Write the body of a function get_4_rightmost_bits that returns the 4 low order bits of x.
  * For instance, if x=0b...11011001, the function should return a uint8_t containing 0b00001001.
  *  If x=0b...11011101, your function should return 0b00001101.
@@ -28,6 +30,7 @@ uint8_t get_4_rightmost_bits(uint32_t x) {
 /* [S2] Bitwise operation: setting a bit
  *
  * https://inginious.info.ucl.ac.be/course/LEPL1503/s2_bits_set
+ *
  * Write the body of a function that returns the value of variable x, but modified with the bit at position pos set to value.
  * Remember that in C (this is defined in stdbool.h), true corresponds to integer 1 while false corresponds to integer 0.
  * Remember than in C, you can create a mask as a binary value and use it with the bitwise and (&) and or (|) operations.
