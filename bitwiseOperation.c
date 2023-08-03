@@ -84,8 +84,11 @@ uint64_t set_bit(uint64_t x, int pos, bool value) {
  */ 
 uint8_t _bits = 8;
 uint32_t cycle_bits(uint32_t x, uint8_t n) {
-    // in INGInious uncomment the line below and sets _bits to 32
-    uint8_t _bits = 32;
+    // in INGInious uncomment the line below and sets _bits to 32 (I set a global var _bits to play on 8,16,32 bits)
+    // uint8_t _bits = 32;
+    // if you prefer to take the size of x, don't not forget to multiply with 8-sizeof return the number of bytes (1B=8bits)
+    // (yeah I made that mistake)
+    // => uint8_t _bits = sizeof(x) *8;
     bool bitArray[_bits];
     bool cycledBitArray[_bits];
     uint32_t result = 0;
