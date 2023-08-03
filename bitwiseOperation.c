@@ -194,7 +194,7 @@ uint32_t reset_highestorder_strong_bit(uint32_t x) {
         if ((x >> strongestBitPosition) & 0b1) break;
     }
     // once we have reached our strongest bit position, we can then shift twice to remove it-keeping the remaining _bits.
-    return x << (_bits - strongestBitPosition) >> (_bits - strongestBitPosition);
+    return strongestBitPosition ? (x << (_bits - strongestBitPosition)) >> (_bits - strongestBitPosition) : 0;
 }
 
 void check_set_bit() {
@@ -334,5 +334,6 @@ void check_reset_highestorder_strong_bit() {
 
 int main(int argc, char **argv) {
 // call check_XXX if you want some outputs
-check_cycle_bits();
+ // check_cycle_bits();
+    check_reset_highestorder_strong_bit();
 }
